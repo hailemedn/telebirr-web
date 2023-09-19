@@ -1,3 +1,11 @@
+import PhoneNumberInput from "./PhoneNumberInput"
+import VerificationInput from "./VerificationInput"
 export default function Register() {
-    return null
+    return (
+        <>
+            <PhoneNumberInput />
+            <VerificationInput />
+        </>
+        
+    )
 }
