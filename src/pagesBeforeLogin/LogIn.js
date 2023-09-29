@@ -16,14 +16,7 @@ export default function LogIn() {
     const handleChange = e => setNum(e.target.value)
     
     return (
-      <>
-        <div className="login-container">
-        
-          <div> 
-            <h1>Welcome to telebirr Web</h1>
-            <p>All-in-One </p>
-          </div>
-          <div> 
+      <> 
             <h2 className="login-text">Login</h2>
             <form>
               <label className="mobile">Mobile Number</label>
@@ -34,10 +27,6 @@ export default function LogIn() {
                 <Route path='/register' element={Register} />
               </Routes>
               </form>
-          </div>
-        </div>
-        
-        <div className="footer"><p>©️2023 Ethio telecom. All rights reserved</p></div>
       </>
         
     )

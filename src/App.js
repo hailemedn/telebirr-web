@@ -1,10 +1,11 @@
 import './App.css';
 import Header from './Header';
-import LogIn from './LogIn';
+import LogIn from './pagesBeforeLogin/LogIn';
 import { Helmet } from 'react-helmet';
 import { Routes, Route } from 'react-router-dom';
-import Register from './Register';
+import Register from './pagesBeforeLogin/Register';
 import { ThemeProvider, useTheme } from './ThemeContext';
+import LoginAndSignupContainer from './pagesBeforeLogin/LoginAndSignupContainer';
 
 function App() {
   const {theme} = useTheme();
@@ -16,10 +17,8 @@ function App() {
           <link rel="canonical" href="http://mysite.com/example" />
           <meta name="description" content="Helmet application" />
         </Helmet>
-        
-        
         <Header />
-        <LogIn /> 
+        <LoginAndSignupContainer /> 
     </div>
   );
 }

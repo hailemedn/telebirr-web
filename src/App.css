@@ -54,6 +54,7 @@ form .link{
   border-radius: 0.4rem;
   padding: 0.4rem 0.6rem;
   background-color: white;
+  margin-bottom: 2em;
 }
 
 .input-container .prefix {
