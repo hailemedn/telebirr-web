@@ -3,6 +3,7 @@ import PhoneNumberInput from "./PhoneNumberInput";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Register from "./Register";
+import './style.css'
 
 
 export default function LogIn() {
@@ -16,18 +17,14 @@ export default function LogIn() {
     const handleChange = e => setNum(e.target.value)
     
     return (
-      <> 
+      <div className="container">
             <h2 className="login-text">Login</h2>
             <form>
               <label className="mobile">Mobile Number</label>
               <PhoneNumberInput num={num} handleChange = {handleChange}/>
               <button className="btn-primary" type="submit" disabled={!validNum()}>Next</button>
-              <p>Don't have an Account? <Link className="link" to='/register'>Create an Account</Link></p>
-              <Routes>
-                <Route path='/register' element={Register} />
-              </Routes>
-              </form>
-      </>
+            </form>
+      </div>
         
     )
 }

@@ -1,8 +1,16 @@
 import LogIn from "./LogIn";
 import Register from "./Register";
+import { useState } from "react";
+
+
 
 export default function LoginAndSignupContainer() {
     
+    const [togglePages, setTogglePages] = useState(true)
+    const toSignup = <p>Don't have an Account? <a onClick={()=> setTogglePages(!togglePages)}>Create an Account</a></p>
+    
+    
+    const toLogin =  <p><a onClick={() => setTogglePages(!togglePages)}>Back to Login</a></p>
     
     return (
       <>
@@ -13,8 +21,9 @@ export default function LoginAndSignupContainer() {
             <p>All-in-One </p>
           </div>
           <div> 
-            <LogIn />
-            {/* <Register /> */}
+            {togglePages ? <LogIn /> : <Register />}
+            {togglePages ? toSignup : toLogin}
+            
           </div>
         </div>
         

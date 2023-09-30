@@ -13,8 +13,9 @@
   align-items: center;
   gap: 2em;
   height: 60vh;
-  margin: 0 auto;
+  margin: 1em auto;
   flex-wrap: wrap;
+  transition: .4s;
 }
 
 /* @media (max-width: 800px) {
@@ -35,9 +36,10 @@ form {
   text-align: center;
 }
 
-form .link{
+.login-container a{
   color: rgb(7, 188, 7);
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -126,3 +128,13 @@ button[disabled] {
   color: #666666;
   cursor: not-allowed;
 }
+
+.footer {
+  position: absolute;
+  bottom: 2em;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+
+
