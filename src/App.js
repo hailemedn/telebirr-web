@@ -1,11 +1,8 @@
 import './App.css';
 import Header from './Header';
-import LogIn from './pagesBeforeLogin/LogIn';
 import { Helmet } from 'react-helmet';
-import { Routes, Route } from 'react-router-dom';
-import Register from './pagesBeforeLogin/Register';
 import { ThemeProvider, useTheme } from './ThemeContext';
-import LoginAndSignupContainer from './pagesBeforeLogin/LoginAndSignupContainer';
+import LoginAndSignupContainer from './pagesBeforeLogin/LoginAndSignupContainer'
 
 function App() {
   const {theme} = useTheme();
